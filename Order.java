@@ -4,27 +4,27 @@ public class Order {
 	public string shopping_list [];
 	
 	
-	public retBuyList() {
+	public void retBuyList() {
+		return shopping_list;
+	}
+	
+	private void updateBuyList() {
 		
 	}
 	
-	private updateBuyList() {
+	public void retOrderSummary () {
 		
 	}
 	
-	public retOrderSummary () {
+	public void sendSummaryViaMail() {
 		
 	}
 	
-	public sendSummaryViaMail() {
+	public void selectDesirableQuantity() {
 		
 	}
 	
-	public selectDesirableQuantity() {
-		
-	}
-	
-	public selectQuantity() {
+	public void selectQuantity() {
 		
 	}
 }

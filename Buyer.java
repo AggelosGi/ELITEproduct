@@ -1,58 +1,64 @@
+import java.util.*;
 
-public class Buyer {
 
-	private String purchased_products [];
+public class Buyer extends User{
+
+	private String purchased_products [];//products that the buyer has purchased
+	
+	private Warehouse warehouse; //the warehouse where products are collected
 	
 	
-	addOrder (){
+	public void addOrder (Order o){
+		orders.put(o.getID(), o);
+		warehouse.addOrder(o);
+	}
+	
+	public void productResume(){
 		
 	}
 	
-	productResume(){
+	public void selectDescAssortment(){
+		return DescAssortment;
 		
 	}
 	
-	selectDescAssortment(){
+	public void selectProduct(){
 		
 	}
 	
-	selectProduct(){
+	public void selectIncrAssortment(){
+		return IncrAssortment;
+	}
+	
+	public void selectPayment(){
 		
 	}
 	
-	selectIncreAssortment(){
+	private void fillinFields(){
 		
 	}
 	
-	selectPayment(){
+	public void selectOrderEntry(){
 		
 	}
 	
-	fillinFields(){
+	public void selectContShopping(){
+		return order;
+	}
+	
+	public void selectCheckout(){
+		return Payment;
+	}
+	
+	public void selectBackatBuyersMainMenu(){
 		
 	}
 	
-	selectOrderEntry(){
+	public void selectProductEvaluation(){
 		
 	}
 	
-	selectContShopping(){
-		
-	}
-	
-	selectCheckout(){
-		
-	}
-	
-	selectBackatBuyersMainMenu(){
-		
-	}
-	
-	selectProductEvaluation(){
-		
-	}
-	
-	selectLeaveComment(){
+	public void selectLeaveComment(){
 		
 	}
 }
