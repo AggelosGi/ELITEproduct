@@ -1,16 +1,18 @@
 
 public class Removal {
 
-	private int evaluations;
-	private int counter_deposit;
-	private int notice;
+	private int evaluations; //evaluation for every producer's product
+	
+	private int counter_deposit; //every user's deposit
+	
+	private int notice; //notification for every producer
 	
 	
-	public selectRemoval() {
+	public void selectRemoval() {
 		
 	}
 	
-	public selectProducersRemoval() {
+	public void selectProducersRemoval() {
 		
 	}
 	
