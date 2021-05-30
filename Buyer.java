@@ -55,10 +55,10 @@ public class Buyer extends User{
 	}
 	
 	public void selectProductEvaluation(){
-		
+		 
 	}
 	
 	public void selectLeaveComment(){
-		
+	 	
 	}
 }
