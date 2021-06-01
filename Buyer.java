@@ -39,7 +39,7 @@ public class Buyer extends User{
 	}
 	
 	public void selectOrderEntry(){
-		
+		  
 	}
 	
 	public void selectContShopping(){
