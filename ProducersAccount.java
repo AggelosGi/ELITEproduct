@@ -38,11 +38,11 @@ public class ProducersAccount {
 	}
 	
 	public void retProducersSummary() {
-		
+		return producersSummary;
 	}
 	
 	public void getProducersSummary() {
-		
+		return producersSummary;
 	}
 
 	
