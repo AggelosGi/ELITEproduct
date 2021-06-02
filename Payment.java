@@ -17,7 +17,7 @@ public class Payment {
 	private string pass; // the password for the paypal account
 	
 	private double delivery_charges; //pay on delivery charges
-	
+	 
 	
 	public retCreditCardFields () {
 		

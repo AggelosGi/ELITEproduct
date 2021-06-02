@@ -9,7 +9,7 @@ public class Removal {
 	
 	
 	public void selectRemoval() {
-		  
+		   
 	}
 	
 	public void selectProducersRemoval() {
