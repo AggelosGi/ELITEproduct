@@ -1,8 +1,15 @@
 import java.time.LocalDateTime;
+import java.util.*;
 
 public class Payment {
 
+	public String CreditCardFields, PaypalFields; //fields in each way of payment
+	
+	public String checkoutmess; //ckeckout message
+	
 	private string card_number; //the card number
+	
+	private string state; //state of the continue button
 	
 	private string card_name; //the name of the card holder
 	
@@ -20,63 +27,79 @@ public class Payment {
 	 
 	
 	public retCreditCardFields () {
-		
+		return CreditCardFields;
 	}
 	
 	public retPaypalFields () {
-		
+		return PaypalFields;
 	}
 	
 	public retPayonDeliveryCosts () {
-		
+		return delivery_charges;
 	}
 	
-	private activateCheckoutMessage() {
-		
+	private boolean activateCheckoutButt() {
+		return state == ACTIVATE;
 	}
 	
 	public retCheckoutMessage() {
-		
+		System.out.println("Checkout Message:", checkoutmess);
 	}
 	
 	private selectPaymentoptions() {
-		
+		System.out.println("Select payment a option");
 	}
 	
 	public selectCreditCard(){
-		
+		System.out.println("You have selected Credit Card as your way of payment");
 	}
 	
 	public select Paypal() {
-		
+		System.out.println("You have selected Paypal as your way of payment");
 	}
 	
 	public selectPayonDelivery() {
+		System.out.println("You have selected Pay on Delivery as your way of payment");
+	}
+	
+	
+	
+	
+	private void acceptTermsofUse() {
 		
 	}
 	
-	private acceptTermsofUse() {
+	
+	
+	
+	private void rejectTermsofUse() {
 		
 	}
 	
-	private rejectTermsofUse() {
-		
-	}
+	
+	
 	
 	public getCreditCardFields() {
-		
+		return CreditCardFields;
 	}
+	
+	
+	
 	
 	public getPaypalFields() {
-		
+		return PaypalFields;
 	}
+	
+	
 	
 	public getPayonDeliveryCosts() {
-		
+		return delivery_charges;
 	}
 	
+	
+	
 	public getCheckoutMessage() {
-		
+		return checkoutmess;
 	}
 	
 	
