@@ -1,30 +1,52 @@
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Order {
 
-	public string shopping_list [];
+	public string shopping_list []; //products included in the order
+	public string orderSummary; //order summary
+	public double quantities; //quantities of products
 	
 	
-	public void retBuyList() {
+	/*shopping list*/
+	
+	public retBuyList() {
 		return shopping_list;
 	}
+	
+	
+	/*update shopping list*/
 	
 	private void updateBuyList() {
 		  
 	} 
 	
-	public void retOrderSummary () {
-		
+	
+	/*order Summary*/
+	
+	public retOrderSummary () {
+		return orderSummary;
 	}
 	
-	public void sendSummaryViaMail() {
-		
+	
+	/*send order summary on buyer's email*/
+	
+	public sendSummaryViaMail() {
+		System.out.println("your Order Summary will be sent via email");
 	}
 	
-	public void selectDesirableQuantity() {
-		
+	
+	/*desirable quantity*/
+	
+	public selectDesirableQuantity() {
+		System.out.println("Select one of the following quantities", quantities);
 	}
 	
-	public void selectQuantity() {
-		
+	
+	/*all available the quantities*/
+	
+	public selectQuantity() {
+		System.out.println("Available quantities:", quantities);
 	}
 }
