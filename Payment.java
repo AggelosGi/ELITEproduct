@@ -7,7 +7,7 @@ public class Payment {
 	
 	public String checkoutmess; //ckeckout message
 	
-	private string card_number; //the card number
+	private long card_number; //the card number
 	
 	private string state; //state of the continue button
 	
@@ -21,7 +21,7 @@ public class Payment {
 	
 	private string paypal_mail; //the mail to log in to paypal account
 	
-	private string pass; // the password for the paypal account
+	private string paypal_pass; // the password for the paypal account
 	
 	private double delivery_charges; //pay on delivery charges
 	 
