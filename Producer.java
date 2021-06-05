@@ -1,4 +1,7 @@
+import java.io.*;
 import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Producer extends User {
 	
@@ -8,32 +11,32 @@ public class Producer extends User {
 		
 	}
 	
-	private void addInfo() { //info = name, address, town, phone, certificates, etc. 
-		
+	private boolean add(Info i) { //info = name, address, town, phone, certificates, etc. 
+		return info.add(i);
 	}
 	
-	private void addPassword() { //password of his personal account
-		
+	private boolean add(Password p) { //password of his personal account
+		return password.add(p);
 	}
 	
-	private void addProducts() { //products that he is interested to sell
-		
+	private boolean add(Product e) { //products that he is interested to sell
+		return product.add(e);
 	}
 	
-	private void addProductSummary() { //a few words about his products
-		
+	private boolean add(ProductSummary ps) { //a few words about his products
+		return productsummary.add(ps);
 	}
 	
-	private void addPhoto() {
-		
+	private boolean add(Photo h) {
+		return photo.add(h);
 	}
 	
-	private void addProducersSummary() { //a few words about himself and his work
-		
+	private boolean add(ProducersSummary sum) { //a few words about himself and his work
+		return producerssummary.add(sum);
 	}
 	
-	private void addCertificates() { //the certificates that certify the authenticity of its products
-		
+	private boolean add(Certificates c) { //the certificates that certify the authenticity of its products
+		return certificates.add(c);
 	}
 
 
