@@ -5,11 +5,16 @@ import java.util.List;
 
 public class Administrator {
 
-	private String email;
-	private String pass;
-	public int purchased_count, max=56, counter, i, j;
-	public String BestSeller, product;
-	public  int productAmountCatalog[];
+	private String email; //admin's email
+	private String pass; //admin's pass
+	public int purchased_count; //how many products a buyers has bought 
+	private int max=56; //var used for finding best seller
+	private int counter, i, j; //vars used for assortments
+	public String BestSeller; // the name of the best seller
+	public String product; //product's name
+	public  int productAmountCatalog[]; 
+	private String variable; //used in assortment
+	
 	
 	
 	
@@ -19,17 +24,32 @@ public class Administrator {
 	
 	
 	
-	public void selectDiscAssortment() {
-		
+	public selectDiscAssortment() {
+		counter=0;
+		for (j=0; j<=productAmountCatalog.length; j++) {
+			for (i=0; i<productAmountCatalog[j]; i++) {
+				if (productAmountCatalog[j] < productAmountCatalog[j+1]) {
+					productAmountCatalog [j+1] = variable;
+					productAmountCatalog [j] = productAmountCatalog[j+1];
+					productAmountCatalog[j+1] = productAmountCatalog[j];
+					
+				}
+			}
+		}
 	}
 	
 	
 	
-	public void selectIncrAssortment() {
+	public selectIncrAssortment() {
 		counter=0;
 		for (j=0; j<=productAmountCatalog.length; j++) {
 			for (i=0; i<productAmountCatalog[j]; i++) {
-				if ()
+				if (productAmountCatalog[j] > productAmountCatalog[j+1]) {
+					productAmountCatalog [j+1] = variable;
+					productAmountCatalog [j] = productAmountCatalog[j+1];
+					productAmountCatalog[j+1] = productAmountCatalog[j];
+					
+				}
 			}
 		}
 		
@@ -48,7 +68,7 @@ public class Administrator {
 	
 	
 	
-	public void selectFindBestSeller() {
+	public selectFindBestSeller() {
 		this.purchased_count = purchased_count;
 		if (purchased_count > max) {
 			BestSeller=product;

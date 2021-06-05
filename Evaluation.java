@@ -6,12 +6,12 @@ import java.util.List;
 public class Evaluation {
 
 	private String purchased_products[]; //products that the buyer has purchased
-	public int grade_of_products[]; //
-	public String comment_of_products[];
-	public String list, listDepoNot, listEvalNot;
+	public int grade_of_products[]; //grade of products
+	public String comment_of_products[]; //comment of products
+	public String list, listDepoNot, listEvalNot; //lists used in evaluations
 	
 	
-	public void retListofProducersEvalNot() {
+	public retListofProducersEvalNot() {
 		return list;
 	}
 	
@@ -31,11 +31,11 @@ public class Evaluation {
 		
 	}
 	
-	public void getListofProducersEvalNot() {
+	public getListofProducersEvalNot() {
 		return listEvalNot;
 	}
 	
-	public void getListofProducersDepoNot() {
+	public getListofProducersDepoNot() {
 		return listDepoNot;
 	}
 }
