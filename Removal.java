@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,12 +14,13 @@ public class Removal {
 	public string producers_name;//producer's name who will be removed
 	
 	
-	
+	//select the option remove
 	public selectRemoval() {
 		   System.out.println(producers_name, "Removed!");
 	}
 	
 	
+	//select removal for a producer
 	public void selectProducersRemoval() {
 		
 	}
