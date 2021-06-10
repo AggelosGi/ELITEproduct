@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,14 +13,14 @@ public class Order {
 	/*shopping list*/
 	
 	public retBuyList() {
-		return shopping_list;
+		return shopping_list[];
 	}
 	
 	
 	/*update shopping list*/
 	
 	private void updateBuyList() {
-		  
+		  this.shopping_list = shopping_list;
 	} 
 	
 	

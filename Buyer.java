@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class Buyer extends User{
 	public string product_resume; //the resume of the product
 	
 	
-	
+	/*buyer*/
 	public Buyer (string property, string email, long pass) {
 		this.property = property;
 		this.email = email;
