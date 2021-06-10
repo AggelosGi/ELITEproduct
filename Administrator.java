@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Administrator {
 
@@ -17,13 +17,13 @@ public class Administrator {
 	
 	
 	
-	
+	//select update assortment
 	public void selectUpdateAssortment() {
 		
 	}
 	
 	
-	
+	//select descending assortment
 	public selectDiscAssortment() {
 		counter=0;
 		for (j=0; j<=productAmountCatalog.length; j++) {
@@ -40,6 +40,7 @@ public class Administrator {
 	
 	
 	
+	//select increasing assortment
 	public selectIncrAssortment() {
 		counter=0;
 		for (j=0; j<=productAmountCatalog.length; j++) {
@@ -56,18 +57,20 @@ public class Administrator {
 	}
 	
 	
-	
+	//select update
 	public void selectUpdate() {
 		
 	}
 	
+	
+	//select back to updated catalog
 	public void selectBacktoUpdatedCatalog() {
 		
 	}
 	
 	
 	
-	
+	//select find the best seller
 	public selectFindBestSeller() {
 		this.purchased_count = purchased_count;
 		if (purchased_count > max) {
@@ -75,27 +78,39 @@ public class Administrator {
 		}
 	}
 	
+	
+	//select register best seller
 	public void selectRegisterBestSeller() {
 		
 		
 	}
 	
+	
+	//cancel the best seller
 	public void CancelBestSeller() {
 		
 	}
 	
+	
+	//select evaluations
 	public void selectEvaluations() {
 		
 	}
 	
+	
+	//select notificated producers evaluations
 	public void selectNotificatedProducers_Ev() {
 		
 	}
 	
+	
+	//select unotificated producers evaluations
 	public void selectUnotificatedProducers_Eval() {
 		
 	}
 	
+	
+	//select notification
 	public void selectNotification() {
 		
 	}
