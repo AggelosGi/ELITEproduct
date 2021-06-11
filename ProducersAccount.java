@@ -25,7 +25,7 @@ public class ProducersAccount {
 		this.password = password;
 	}
 	
-	private void updatedInfoFields() {
+	private void updatedInfoFields() { //update the following info fields
 		try {
 			rs.updateString( "Name", newName );
 			rs.updateString( "Email", newEmail );
@@ -42,11 +42,11 @@ public class ProducersAccount {
 		
 	}
 	
-	private void updatePasswordField() {
+	private void updatePasswordField() { //update password field
 		
 	}
 	
-	private void updateProducersProducts() {
+	private void updateProducersProducts() { //update producers products
 		try {
 			rs.updateString( "producers_products", products );
 			rs.updateRow( );
@@ -57,7 +57,7 @@ public class ProducersAccount {
 		}
 	}
 	
-	private void updateProductSummary() {
+	private void updateProductSummary() { //update product summary
 		try {
 			rs.updateString( "product_info", product );
 			rs.updateRow( );
@@ -68,11 +68,11 @@ public class ProducersAccount {
 		}
 	}
 	
-	private void updateProducersPhoto() {
+	private void updateProducersPhoto() { //update producers photo
 		
 	}
 	
-	private void updateProducersSummary() {
+	private void updateProducersSummary() { //update producers summary
 		try {
 			rs.updateString( "personal_info", personal );
 			rs.updateRow( );
@@ -91,7 +91,7 @@ public class ProducersAccount {
 		return producers_summary;
 	}
 
-	private void updateCertificates() {
+	private void updateCertificates() { //update certificates
 		
 	}
 	

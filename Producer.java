@@ -7,7 +7,7 @@ public class Producer extends User {
 	
 	public String placed_products[];
 	
-	private void selectRegistration() { 
+	private void selectRegistration() { //select registration from LoginRegistrationSelectionScreen
 		
 	}
 	
@@ -27,7 +27,7 @@ public class Producer extends User {
 		return productsummary.add(ps);
 	}
 	
-	private boolean add(Photo h) {
+	private boolean add(Photo h) { //the producers photo
 		return photo.add(h);
 	}
 	
